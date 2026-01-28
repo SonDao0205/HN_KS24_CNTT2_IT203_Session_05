@@ -23,6 +23,10 @@ public class Main {
                     int target;
                     System.out.print("Nhập số lượng của mảng : ");
                     n = sc.nextInt();
+                    if(n == 0 || n < 0){
+                        System.out.println("Số lượng không hợp lệ!");
+                        break;
+                    }
                     array = new int[n];
                     for ( int i = 0; i < n; i++ ) {
                         System.out.printf("Nhập phần tử vị trí thứ %d : ",i);
@@ -35,6 +39,10 @@ public class Main {
                 case 2:
                     System.out.print("Nhập số lượng của mảng : ");
                     n = sc.nextInt();
+                    if(n == 0 || n < 0){
+                        System.out.println("Số lượng không hợp lệ!");
+                        break;
+                    }
                     array = new int[n];
                     for ( int i = 0; i < n; i++ ) {
                         System.out.printf("Nhập phần tử vị trí thứ %d : ",i);
@@ -46,6 +54,10 @@ public class Main {
                     sc.nextLine();
                     System.out.print("Nhập một câu bất kỳ : ");
                     input = sc.nextLine();
+                    if(input.trim().isEmpty()){
+                        System.out.println("Dữ liệu nhập không hợp lệ!");
+                        break;
+                    }
                     boolean isValid = validPalindrome(input);
                     if (isValid) {
                         System.out.println("Đây là chuỗi đối xứng!");
@@ -57,12 +69,20 @@ public class Main {
                     sc.nextLine();
                     System.out.print("Nhập 1 chuỗi : ");
                     input = sc.nextLine();
+                    if(input.trim().isEmpty()){
+                        System.out.println("Dữ liệu nhập không hợp lệ!");
+                        break;
+                    }
                     String result = reverseWords(input);
                     System.out.println("Chuỗi đã đảo ngược : " + result);
                     break;
                 case 5:
                     System.out.print("Nhập số nguyên dương : ");
                     n = sc.nextInt();
+                    if(n == 0 || n < 0){
+                        System.out.println("Bạn cần nhập số nguyên dương!");
+                        break;
+                    }
                     happyNumber(n);
                     break;
                 case 0:
