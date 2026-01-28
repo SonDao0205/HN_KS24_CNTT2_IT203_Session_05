@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int choice;
         do {
@@ -97,7 +97,7 @@ public class Main {
 
     static public void twoSum(int[] array, int target,int n){
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+            for (int j = i + 1; j < n; j++) {
                 if(array[i]+array[j] == target){
                     System.out.printf("[%d, %d]\n",i,j);
                     return;
@@ -132,7 +132,7 @@ public class Main {
         String cleanString =  input.replaceAll(regex, "").toLowerCase();
         System.out.println("clean string : "+ cleanString);
         int length = cleanString.length();
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < length / 2; i++) {
             if (cleanString.charAt(i) != cleanString.charAt(length - i - 1)) {
                 return false;
             }
