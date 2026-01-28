@@ -23,7 +23,7 @@ public class Main {
                     int target;
                     System.out.print("Nhập số lượng của mảng : ");
                     n = sc.nextInt();
-                    if(n == 0 || n < 0){
+                    if(n <= 0){
                         System.out.println("Số lượng không hợp lệ!");
                         break;
                     }
@@ -39,7 +39,7 @@ public class Main {
                 case 2:
                     System.out.print("Nhập số lượng của mảng : ");
                     n = sc.nextInt();
-                    if(n == 0 || n < 0){
+                    if(n <= 0){
                         System.out.println("Số lượng không hợp lệ!");
                         break;
                     }
@@ -79,7 +79,7 @@ public class Main {
                 case 5:
                     System.out.print("Nhập số nguyên dương : ");
                     n = sc.nextInt();
-                    if(n == 0 || n < 0){
+                    if(n <= 0){
                         System.out.println("Bạn cần nhập số nguyên dương!");
                         break;
                     }
