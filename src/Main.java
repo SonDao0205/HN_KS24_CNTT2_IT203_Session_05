@@ -115,6 +115,7 @@ public class Main {
                 pos++;
             }
         }
+
         for (int i = pos; i < n; i++) {
             array[i] = 0;
         }
@@ -167,13 +168,10 @@ public class Main {
 
     static public int sumSquare(int n){
         int sum = 0;
-        int count = 0;
         while(n > 0){
-            count++;
             int digit = n % 10;
             sum += digit*digit;
             n /= 10;
-//            System.out.printf("count : %d, digit : %d, sum : %d, n : %d\n",count, digit,sum,n);
         }
         return sum;
     }
